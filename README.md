@@ -11,7 +11,7 @@ The first step will be to set up the AWS Cognito user pools & Google. There is g
 -  Once authenticated the user will be redirected to authenticated URL/endpoint
 
 ### Installation
-- Rename __example.env__ file to __.env__ file.
+- Rename __example_env__ file to __.env__ file.
 - Configure all the variables as per the description below.
 
 
@@ -19,9 +19,9 @@ The first step will be to set up the AWS Cognito user pools & Google. There is g
 |--------------------|----------------------------------------------------------------------------------------------------------|
 | REDIRECT_URI       | This URL can be located under AWS Cognito > User Pools > [MyPool] > App Client Settings > Callback URLS. |
 | CLIENT_ID          | This ID can be found under AWS Cognito > User Pools > [MyPool] > App Client Settings > ID                |
-| LOGIN_URL          | https://<myurl>/login?                                                                                   |
-| TOKEN_URL          | https://<myurl>/oauth2/token?                                                                            |
-| USER_INFO_ENDPOINT | https://<myurl>/oauth2/userInfo                                                                          |
+| LOGIN_URL          | https://myurl/login?                                                                                   |
+| TOKEN_URL          | https://myurl/oauth2/token?                                                                            |
+| USER_INFO_ENDPOINT | https://myurl/oauth2/userInfo                                                                          |
 | CLIENT_AUTH        | CLIENT_ID:CLIENT_SECRET                                                                                  |
 | PUBLIC_KEY_URL     | https://cognito-idp.{region}.amazonaws.com/{userPoolId}/.well-known/jwks.json                            |
 | REGION             | AWS Region. For example: us-west-1                                                                       |
