@@ -1,0 +1,5 @@
+#Environement Variable
+*.env
+
+#Session directory
+.flask_session/*
