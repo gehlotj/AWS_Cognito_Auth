@@ -50,8 +50,6 @@ def callback():
         'client_id': service['CLIENT_ID'],
         'scope': 'open_id email'
     }
-    print(service['CLIENT_AUTH'])
-    print('above is auth')
     payload = Req.get_token(params,service['CLIENT_AUTH'],service['TOKEN_URL'])
     if payload.status_code == 200:
         url = url_for('login_bp.homepage')
