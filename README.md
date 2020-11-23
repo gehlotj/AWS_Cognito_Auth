@@ -12,7 +12,7 @@ The first step will be to set up the AWS Cognito user pools & Google. There is g
 
 ### Installation
 - Rename __example.env__ file to __.env__ file.
-- Configure all the variables
+- Configure all the variables as per the description below.
 
 
 | Env Variables      | Explanation                                                                                              |
@@ -27,7 +27,6 @@ The first step will be to set up the AWS Cognito user pools & Google. There is g
 | REGION             | AWS Region. For example: us-west-1                                                                       |
 | POOL_ID            | Pool ID is located under: AWS Cognito > User Pools > [MyPool] > General Settings > Pool ID               |
 
-configure all the environment variables in example_env and rename the file to .env
 
 ```python
 pip3 install -r requirements.txt
