@@ -27,6 +27,7 @@ The first step will be to set up the AWS Cognito user pools & Google. There is g
 | REGION             | AWS Region. For example: us-west-1                                                                       |
 | POOL_ID            | Pool ID is located under: AWS Cognito > User Pools > [MyPool] > General Settings > Pool ID               |
 
+*Note: Cognito url (ref. as <myurl> in the table above) can be found under: AWS Cognito > User Pools > [MyPool] > Domain name > Amazon Cognito Domain*
 
 ```python
 pip3 install -r requirements.txt
