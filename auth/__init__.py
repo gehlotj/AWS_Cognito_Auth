@@ -50,5 +50,4 @@ def create_app():
             app.logger.error('CLIENT_AUTH is not defined in env file')
             abort(500)
         app.config['CLIENT_AUTH'] = Req.get_encoded_cid(app.config['CLIENT_AUTH'])
-        #print(app.config['CLIENT_AUTH'])
         return app
