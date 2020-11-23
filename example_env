@@ -1,0 +1,27 @@
+#application variables
+SECRET_KEY = THESECRET
+FLASK_ENV = development
+FLASK_APP = auth
+SESSION_TYPE = filesystem
+
+#service variables
+REDIRECT_URI = http://localhost:5000/callback
+CLIENT_ID = 6h6nr2a3o0451176
+LOGIN_URL = https://<myurl>/login?
+TOKEN_URL = https://<myurl>/oauth2/token?
+USER_INFO_ENDPOINT = https://<myurl>/oauth2/userInfo
+CLIENT_AUTH = client_id:client_secret
+PUBLIC_KEY_URL = https://cognito-idp.{region}.amazonaws.com/{userPoolId}/.well-known/jwks.json
+REGION = us-west-1
+POOL_ID = somethingtoocool
+PUBLIC_KEY = NONE
+
+#JWT token properties
+JWT_SECRET_KEY = secret
+JWT_ALGORITHM = 'RS256'
+JWT_TOKEN_LOCATION = 'cookies'
+JWT_COOKIE_CSRF_PROTECT = False
+JWT_CSRF_CHECK_FORM = True
+JWT_DECODE_ALGORITHMS = 'RS256'
+JWT_PUBLIC_KEY = NONE
+JWT_IDENTITY_CLAIM = 'sub'
